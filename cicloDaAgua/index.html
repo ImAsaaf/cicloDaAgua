@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclo da Água</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <h1><a href="#">Ciclo da Água</a></h1>
+    
+    <div class="container">
+        <label for="ciclo">Digite uma etapa do ciclo da água:</label>
+        <div class="input-container">
+            <input list="etapas" id="ciclo" placeholder="Ex: evaporação, condensação...">
+            <datalist id="etapas">
+                <option value="Evaporação">
+                <option value="Condensação">
+                <option value="Precipitação">
+                <option value="Infiltração">
+                <option value="Transpiração">
+            </datalist>
+            <button onclick="mostrarCiclo()">Mostrar Ciclo</button>
+        </div>
+
+        <div id="ciclo-container">
+            <p id="descricao">Digite uma etapa do ciclo da água para ver a imagem e a descrição correspondentes.</p>
+            <img id="imagem-ciclo" src="img/Ciclo_da_agua.png" alt="Esquema do ciclo da água">
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>

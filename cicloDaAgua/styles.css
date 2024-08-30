@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    color: #00796b;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    background-color: #004d40;
+    color: #ffffff;
+    padding: 20px;
+    margin: 0;
+    font-family: 'Georgia', serif;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra do texto */
+}
+h1 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+h1 a:hover {
+    text-decoration: underline;
+}
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre os elementos */
+}
+label {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #004d40;
+    border-radius: 5px;
+    width: 300px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+input[type="text"]:focus {
+    border-color: #00796b;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 121, 107, 0.5);
+}
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif; /* Fonte mais estilizada */
+    color: #ffffff;
+    background-color: #00796b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+button:hover {
+    background-color: #004d40;
+}
+#ciclo-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#descricao {
+    font-size: 1.1em;
+    margin: 20px 0;
+    line-height: 1.6;
+    font-family: 'Verdana', sans-serif;
+    color: #004d40;
+    max-width: 80%;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease; /* Transição suave para a descrição */
+}
+img {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    border: 2px solid #00796b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+img.transpiracao {
+    width: 60%; /* Ajusta o tamanho da imagem de transpiração */
+    max-width: 400px; /* Ajusta o tamanho máximo da imagem de transpiração */
+}
+img:hover {
+    transform: scale(1.05);
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+        padding: 15px;
+    }
+    input[type="text"] {
+        width: 100%;
+    }
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+    img {
+        width: 100%;
+        max-width: 100%;
+    }
+    #descricao {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
